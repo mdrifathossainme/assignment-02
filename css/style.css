@@ -369,7 +369,7 @@ color: #fff;
 
 /* rosponsive area  */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:830px) {
     h1{
         font-size: 35px;
     }
@@ -417,7 +417,74 @@ color: #fff;
          transform: translateY(-10px) rotate(-225deg);
      } nav :checked ~ .icon-burger .line:nth-child(2){
          opacity: 0;}
+
+
+ main{
+                padding: 0 20px
+            }
+            .influencer-item{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                
+            }
+            .influencer-img img{
+                width: 100%;
+                text-align: center;
+            }
+            .logo-item {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+               
+            }
+            ..brard-logo{
+                padding: 0;
+            }
+            .logo-item a{
+               margin: 20px 0;
+            }
+            .influencer-text, .featured-title{
+                margin-top: 0px;
+            }
+            .product-box ,.featured-item , .service-item{
+             grid-template-columns: repeat(2, 1fr);
         }
+        .popular-area{
+            padding: 0;
+        }
+        .see-more{
+            text-align: center;}
+            .img-box , .featured-img-item {
+                margin: 20px 30px;
+            }
+            .subcribe-item:nth-child(1){
+                display: none;
+            }
+            .subcribe-area{
+                margin:0  50px;
+            }
+            .form-area{
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+            .form-area input ,button{
+           width:100%;
+       }
+        #button{
+            width: 100%;
+            
+        }
+       .subcribe-area{
+           height: 100px;
+       }
+
+
+
+        }
+
+
+
+
 
         @media screen and (max-width:450px){
             main{
