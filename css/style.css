@@ -1,0 +1,446 @@
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Merriweather', serif; */
+body{
+    margin: 0;
+    padding: 0;
+}
+ main{
+     margin: 100px 0;
+     padding: 0 50px;
+    
+ }
+ h1{
+    font-family: 'Merriweather', serif;  
+ }
+ p{
+     font-family: cursive;
+     font-weight: 700;
+ }
+/* common tag area end  */
+
+ /* header area start  */
+ nav{
+    position: fixed;
+    display: block;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 70px;
+    padding: .5%;
+    background-color:#3e65da;
+}
+.logo{
+    float: left;
+    margin-top:-10px ;
+    margin-left: 30px;
+}
+.logo a{ 
+     text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.menu{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+}
+#icon{
+    padding: 0 10px
+}
+.menu li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding:8px 15px;
+    font-size: 18px ;
+    transition: .5s;
+}
+.menu li a:hover{
+    background-color:   rgb(0,0, 0,.1);
+    transform: scale(1.2);
+}
+#nav-toggle{
+    position: absolute;
+    top:-100px;
+}
+.icon-burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ .line{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .s ease-in-out;
+}
+
+/* header area end  */
+
+/* influencer-area start  */
+.influencer-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.influencer-text{
+    margin-top: 70px;
+}
+.influencer-text h1{
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(73, 71, 71);
+
+}
+.influencer-text p{
+    font-size: 18px;
+    font-weight:600;
+    font-family: serif;
+    color: #000;
+
+}
+.btn{
+    padding-top: 20px;
+    transition: .5s ease-in-out;
+}
+.btn a:hover {
+    background-color: transparent;
+    border: 1px solid #e02c6d ;
+    color: #e02c6d;
+}
+.btn a{
+    text-decoration: none;
+    background-color: #e02c6d;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 40px;
+}
+#btn-icon{
+    margin-left: 10px;
+}
+.influencer-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: ;
+    background-image: url(../img/product/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* influencer-area End */
+/* brand logo area srart  */
+
+.brard-logo{
+margin-top: 100px;
+padding: 0 50px;
+justify-content: center;
+
+}
+.logo-item {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+   
+}
+.logo-item a{
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.logo-item a:hover{
+    transform: scale(1.1);
+}
+
+/* brand logo area End */
+
+/* popular area start  */
+.popular-area{
+    margin-top: 100px;
+    padding: 0 20px;
+}
+.popular-title {
+    text-align: center;
+}
+.product{
+    display: flexbox;
+    justify-content: space-between;
+}
+.product-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product-item{
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 10px 10px 60px gray ;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.product-item:hover{
+    transform: scale(1.1);
+}
+.product-item h3{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 0;
+}
+.product-item p{
+    line-height: 10px;
+}
+.checked {
+  color: orange;
+}
+#rating-number{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.see-more{
+    margin-top: 30px;
+    text-align: right;
+}
+.see-more a{
+    text-decoration: none;
+    color:#e02c6d  ;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:sans-serif;
+}
+
+/* popular area end */
+
+/* service area start  */
+.service-area{
+    margin-top: 50px;
+}
+.service-title{
+text-align: center;
+}
+.service-item img{
+    width: 150px;
+    height: 130px;
+}
+.service-item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.service-item{
+    margin: 50px 30px;
+    text-align: center;
+    cursor: pointer;
+   
+}
+.img-box{
+    background-color: #e02c6e7a;
+    margin: 0 20px;
+ border: 1px solid;
+ padding: 10px;
+}
+.featured-item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 0 3px;
+}
+.featured-title{
+    margin: 80px 0;
+    text-align: center;
+}
+
+.featured-img-item{
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+   ;
+}
+.featured-img-item:hover .featured-img img{
+    transform: scale(1.4);
+    
+}
+.featured-img img{
+    width: 100%;
+     transition: .5s ease-in-out;
+     
+}
+.img-detail{
+    position: absolute;
+    top: 0;
+  display: none;
+}
+.featured-img-item:hover .img-detail{
+  height: 100%;
+  display: block;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+/* service area end  */
+
+/* subcribe areaea start */
+.subcribe-area{
+    margin:100px 50px;
+    height: 300px;
+    display: flex;
+    
+}
+.subcribe-item{
+    width: 400px;
+    height: auto;
+}
+#box2{
+    flex-grow: 2;
+}
+ .form-area{
+           display: flex;
+           flex-direction: column;
+           padding: 50px;
+           justify-content: center;
+           border: 1px solid;
+       }
+       .form-area input ,button{
+           margin: 10px 0;
+           padding: 10px 10px;
+           width:300px;
+           font-size: 20px;
+           font-weight: 700;
+       }
+        #button{
+            cursor: pointer;
+            width: 325px;
+           background-color: rgba(16, 214, 9, 0.63);
+           color: #fff;
+       }
+       #button:hover{
+           background: transparent;
+           border: 1px solid rgba(16, 214, 9, 0.63) ;
+           color: rgba(16, 214, 9, 0.63);
+       }
+/* subcribe areaea end */
+
+footer{
+    background-color: rgb(2, 2, 49) ;
+    padding: 30px 0;
+}
+.footer-area{
+text-align: center;
+color: #fff;
+}
+.footer-icon a{
+    color: #fff;
+}
+#footer-icon{
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* rosponsive area  */
+
+@media screen and (max-width:768px) {
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    nav .menu{
+         float: none;
+         position: fixed;
+         z-index: 9;
+         background-color: rgba(0, 0, 0, .8);
+         right: 0;
+         left: 0;
+         top: 70px;
+         bottom: 100%;
+         flex-direction: column;
+         width: auto;
+         height:auto;
+         overflow: hidden;
+         transition: all .5s ease-in-out;
+ 
+     }
+     .menu li a{
+         font-size: 18px;
+         margin: 0;
+         padding: 0;
+     }
+     .logo{
+         float: none;
+         width: auto;
+         justify-content: center;
+     }
+     nav .icon-burger{
+         display: block ;
+     }
+     nav :checked~ .menu{
+         bottom: 0;
+     }
+     nav .icon-burger{
+         display: block;
+     }
+     nav :checked ~ .icon-burger .line:nth-child(1){
+         transform: translateY(10px) rotate(225deg);
+     } nav :checked ~ .icon-burger .line:nth-child(3){
+         transform: translateY(-10px) rotate(-225deg);
+     } nav :checked ~ .icon-burger .line:nth-child(2){
+         opacity: 0;}
+        }
+
+        @media screen and (max-width:400px){
+            main{
+                padding: 0 20px
+            }
+            .influencer-item{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                
+            }
+            .influencer-img img{
+                width: 100%;
+                text-align: center;
+            }
+            .logo-item {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+               
+            }
+            ..brard-logo{
+                padding: 0;
+            }
+            .logo-item a{
+               margin: 20px 0;
+            }
+        }
